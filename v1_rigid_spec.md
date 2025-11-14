@@ -1,0 +1,1 @@
+V1 will only implement rigid re-docking. Torsion fitting and LAS projection are stretch goals.
