@@ -205,3 +205,12 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Ignore PDBBind raw data
+/data/PDBbind_v2020_index.tar.gz
+/data/PDBbind_v2020_other_PL.tar.gz
+/data/PDBbind_v2020_refined-set.tar.gz
+/data/index/
+/data/other_PL/
+/data/refined-set/
+/data/v2020/
