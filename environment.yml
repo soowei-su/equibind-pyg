@@ -1,0 +1,20 @@
+name: equibind-pyg
+channels:
+  - pytorch
+  - pyg
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch=2.5.* 
+  - pytorch-cuda=12.1
+  - pyg=2.7.*
+  - rdkit
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pip
+  - pip:
+      - equibind_pyg==0.1.0

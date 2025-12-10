@@ -1,0 +1,34 @@
+# EquiBind-PyG rigid default training config
+
+description: >
+  Default rigid EquiBind-PyG model for training on the PDBBind v2020
+  time-split (no ligand overlap) using the full train set. This is the
+  main configuration used in our experiments.
+
+dataset:
+  root: "data/pyg_data"
+  k_receptor_neighbors: 30
+  batch_size: 2
+
+model:
+  node_dim: 128
+  num_layers: 4
+  num_keypoints: 32
+  edge_mlp_dim: 64
+  coord_mlp_dim: 64
+  cross_attn_dim: 64
+
+training:
+  lr: 0.0001
+  weight_decay: 0.0
+  epochs: 50
+  grad_clip_norm: 10.0
+  device: "cuda"
+
+loss:
+  lambda_rmsd: 1.0
+  lambda_kabsch: 0.5
+  lambda_centroid: 0.05
+
+checkpoint:
+  save_path: "checkpoints/equibind_rigid_default.pt"
