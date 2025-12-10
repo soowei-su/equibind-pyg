@@ -15,7 +15,7 @@ It is designed for:
 * Reproducible research,
 * Future PyG integration.
 
-For full feature definitions (28-dim ligand, 21-dim residue), see `docs/v1_rigid_spec.md`.
+For full feature definitions (28-dim ligand, 21-dim residue), see `docs/rigid_docking_specification.md`.
 
 ---
 
@@ -178,7 +178,7 @@ equibind_pyg/
   layers/
     egnn.py                  # Base EGNN layer (SE(3)-equivariant)
     iegnn.py                 # Interaction-EGNN for cross-attention
-    keypoint_attention.py    # Optional keypoint module (not used in rigid baseline)
+    keypoint_attention.py    # (included for completeness, unused in rigid baseline)
   geometry/
     kabsch.py                # Differentiable Kabsch alignment
     metrics.py               # RMSD, Kabsch RMSD, centroid distance
@@ -236,5 +236,6 @@ Hannes Stärk et al., ICML 2022
 Developed for:
 **Stanford CS224W — Machine Learning with Graphs (2025)**
 Course Project: *EquiBind-PyG: A Modular Equivariant GNN for Rigid Protein–Ligand Docking*
+
 
 
